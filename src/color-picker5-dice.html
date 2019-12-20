@@ -10,14 +10,32 @@
 </head>
 <body>
 
+    <div class="wrap">
+      <div class="componente">
+        <span class="box">
+          <div class="color-box bg-green selected" onclick="selectThis('green')"></div>
+        </span>
+        <span class="box"></span>
+        <span class="box">
+          <div class="color-box bg-yellow" onclick="selectThis('yellow')"></div>
+        </span>
 
-    <div class="componente">
-        <div class="color-box bg-green selected" onclick="selectThis('green')"></div>
-        <div class="color-box bg-yellow" onclick="selectThis('yellow')"></div>
-        <div class="color-box bg-red" onclick="selectThis('red')"></div>
-        <div class="color-box bg-blue" onclick="selectThis('blue')"></div>
-        <div class="color-box bg-pink" onclick="selectThis('pink')"></div>
+        <span class="box"></span>
+        <span class="box">
+          <div class="color-box bg-red" onclick="selectThis('red')"></div>
+        </span>
+        <span class="box"></span>
+
+        <span class="box">
+          <div class="color-box bg-blue" onclick="selectThis('blue')"></div>
+        </span>
+        <span class="box"></span>
+        <span class="box">
+          <div class="color-box bg-pink" onclick="selectThis('pink')"></div>
+        </span>
+      </div>
     </div>
+
 
     <script type="text/javascript">
     	function createColors(arr_colors)
