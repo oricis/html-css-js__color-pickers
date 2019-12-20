@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color picker</title>
+
+    <link rel="stylesheet" type="text/css" href="public/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="public/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="public/css/color-picker5-dice.css">
+</head>
+<body>
+
+    <div class="wrap">
+      <div class="componente">
+        <span class="box">
+          <div class="color-box bg-green selected" onclick="selectThis('green')"></div>
+        </span>
+        <span class="box"></span>
+        <span class="box">
+          <div class="color-box bg-yellow" onclick="selectThis('yellow')"></div>
+        </span>
+
+        <span class="box"></span>
+        <span class="box">
+          <div class="color-box bg-red" onclick="selectThis('red')"></div>
+        </span>
+        <span class="box"></span>
+
+        <span class="box">
+          <div class="color-box bg-blue" onclick="selectThis('blue')"></div>
+        </span>
+        <span class="box"></span>
+        <span class="box">
+          <div class="color-box bg-pink" onclick="selectThis('pink')"></div>
+        </span>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+    	function createColors(arr_colors)
+    	{
+    		/*var html_element = '<div class="color-box" data-color=""></div>';
+    		for (var i = arr_colors.length - 1; i >= 0; i--) {
+    			var color = arr_colors[i];
+
+
+    		} /**/
+    	}
+        function selectThis(color)
+        {
+            document.querySelector('.selected').classList.remove('selected');
+            document.querySelector('.bg-' + color).classList.add('selected');
+        }
+    </script>
+</body>
+</html>
